@@ -6,9 +6,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web design using tailwind</title>
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <link rel="stylesheet" href="assets/css/font.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container mx-auto">
+      <header class="bg-slate-100 text-dark py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="#" class="text-2xl font-bold flex items-center space-x-2">
+            <img src="/assets/images/logo.png" alt="Logo" class="h-12" />
+          </a>
+          <nav class="hidden md:block lg:block">
+            <ul class="flex items-center gap-2 lg:gap-7">
+              <li>
+                <div
+                  aria-label="Customise options"
+                  class="cursor-pointer"
+                  data-state="closed"
+                >
+                  <div class="text-base">
+                    <a
+                      class="flex cursor-pointer items-center gap-2 hover:text-green"
+                      href="/academic/"
+                      >ক্লাস ৫-১২
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="mt-0"
+                        height="20"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline></svg
+                    ></a>
+                  </div>
+
+                  <div
+                    class="absolute top-full left-0 opacity-0 pointer-events-none"
+                  >
+                    <ul class="bg-white p-2 shadow rounded">
+                      <li><a href="#">মানসম্পন্ন</a></li>
+                      <li><a href="#">অভিজ্ঞতার বিশাল সংগ্রহশালা</a></li>
+                      <li><a href="#">এইচএসসি</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  aria-label="Customise options"
+                  class="cursor-pointer"
+                  data-state="closed"
+                >
+                  <div class="text-base">
+                    <a
+                      class="flex cursor-pointer items-center gap-2 hover:text-green"
+                      href="/skills/"
+                      >স্কিলস
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="mt-0"
+                        height="20"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline></svg
+                    ></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="hover:text-green" href="/admission/"
+                  >ভর্তি পরীক্ষা
+                </a>
+              </li>
+              <li>
+                <a class="hover:text-green" href="/jobs-prep/"
+                  >চাকরি প্রস্তুতি
+                </a>
+              </li>
+              <li>
+                <div
+                  aria-label="Customise options"
+                  class="cursor-pointer"
+                  data-state="closed"
+                >
+                  <div class="text-base">
+                    <a
+                      class="flex cursor-pointer items-center gap-2 hover:text-green"
+                      href="/online-batch/"
+                      >অনলাইন ব্যাচ ২০২৩
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="mt-0"
+                        height="20"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline></svg
+                    ></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center space-x-4">
+            <button
+              class="bd-font poppins bg-green-500 hover:bg-green-700 text-white py-1.5 px-4 rounded-sm flex items-center"
+            >
+              লগ-ইন
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="banner">
+        <div class="relative">
+          <div>
+            <div
+              class="banner-content relative overflow-hidden bg-no-repeat bg-[#A22A2B]"
+            >
+              <div
+                class="container px-2 md:px-4 mx-auto relative flex h-[64px] md:h-[104px] items-center justify-between md:gap-7"
+              >
+                <a class="absolute inset-0 z-10" href="/online-batch/">
+                  <span class="text-[0px]">online batch</span>
+                </a>
+                <div
+                  class="w-[62px] h-[48px] md:w-[113px] md:h-[89px] z-[1] opacity-1 transition-opacity duration-300 ease-in-out"
+                  style="font-size: 0px; opacity: 1"
+                >
+                  <img
+                    class="w-[62px] h-[48px] md:w-[113px] md:h-[89px] z-[1] opacity-1 transition-opacity duration-300 ease-in-out"
+                    src="/assets/images/online-batch.webp"
+                    alt="online batch"
+                    width="113"
+                    height="89"
+                  />
+                </div>
+                <div
+                  class="md:w-auto absolute sm:-translate-x-1/2 md:-translate-x-0 left-0 sm:left-1/2 md:left-0 md:static opacity-0 transition-opacity duration-300 ease-in-out"
+                  style="font-size: 0px; opacity: 1"
+                >
+                  <img
+                    alt="online batch"
+                    loading="lazy"
+                    width="453"
+                    height="110"
+                    src="/assets/images/online-batch_2.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div
+                  class="w-[103px] h-[59px] md:w-[191px] md:h-[110px] z-[1] opacity-0 transition-opacity duration-300 ease-in-out"
+                  style="font-size: 0px; opacity: 1"
+                >
+                  <img
+                    alt="online batch"
+                    loading="lazy"
+                    width="191"
+                    height="110"
+                    src="/assets/images/online-batch_3.webp"
+                    style="color: transparent"
+                  />
+                </div>
+                <div
+                  class="hidden lg:block opacity-0 transition-opacity duration-300 ease-in-out"
+                  style="font-size: 0px; opacity: 1"
+                ></div>
+              </div>
+              <svg
+                class="absolute right-2 top-1 z-20 h-2 w-2 cursor-pointer md:top-2 md:h-3 md:w-3"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.410704 0.410734C0.736141 0.0852972 1.26378 0.0852972 1.58921 0.410734L5.99996 4.82148L10.4107 0.410734C10.7361 0.0852972 11.2638 0.0852972 11.5892 0.410734C11.9147 0.736171 11.9147 1.26381 11.5892 1.58925L7.17847 5.99999L11.5892 10.4107C11.9147 10.7362 11.9147 11.2638 11.5892 11.5892C11.2638 11.9147 10.7361 11.9147 10.4107 11.5892L5.99996 7.1785L1.58921 11.5892C1.26378 11.9147 0.736141 11.9147 0.410704 11.5892C0.0852667 11.2638 0.0852667 10.7362 0.410704 10.4107L4.82145 5.99999L0.410704 1.58925C0.0852667 1.26381 0.0852667 0.736171 0.410704 0.410734Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="admission mx-auto px-2 md:px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 lg:w-1/3 px-2 md:px-4">
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-[100px] h-[100px] md:w-[150px] md:h-[150px]">
+                <img
+                  class="w-[100px] h-[100px] md:w-[150px] md:h-[150px]"
+                  src="/assets/images/online-batch_4.webp"
+                  alt="online batch"
+                  width="150"
+                  height="150"
+                />
+              </div>
+              <h3 class="text-2xl font-bold text-center mt-4">
+                অনলাইন ব্যাচ ২০২৩
+              </h3>
+              <p class="text-center mt-2">
+                বিসিএস প্রিলিমিনারি পরীক্ষার জন্য অনলাইন ব্যাচ ২০২৩ এ ভর্তি হতে
+                চাইলে আপনার নাম, মোবাইল নাম্বার এবং ইমেইল দিয়ে রেজিস্ট্রেশন
+                করুন।
+              </p>
+              <div class="mt-4">
+                <a
+                  class="bd-font poppins bg-green-500 hover:bg-green-700 text-white py-1.5 px-4 rounded-sm flex items-center"
+                  href="/online-batch/"
+                  >অনলাইন ব্যাচ ২০২৩
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+
+
+    </div>
   </body>
 </html>
